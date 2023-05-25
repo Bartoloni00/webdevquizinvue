@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Quiz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="scripts/vue.js"></script>
+</head>
+<body>
+    <main>
+        <div id="vw">
+        <nav>
+            <ul>
+                <li>WebDev Quiz</li>
+               <div>
+                <li><router-link to="/Formulario" exact>Juego</router-link></li>
+                <li><router-link to="/ranking" exact>Ranking</router-link></li>
+               </div>
+            </ul>
+        </nav>
+        <header>
+                <h1>WebDev Quiz Game</h1>
+                <p>Pon a prueba tus conocimientos de programación web</p>
+        </header>
+              <transition name="slide-fade" mode="out-in">
+                  <router-view></router-view>
+            </transition>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2023 Abraham Bartoloni | Primer Parcial | 'Apps para Dispositivos Móviles' | Diseño y Programación Web | Profesora: Mabel García </p>
+            <p>App realizada con HTML5, CSS3 y VueJS</p>
+        </div>
+    </footer>
+    <script src="scripts/vue-router.js"></script>
+    <script src="scripts/componentes/Formulario.js"></script>
+    <script src="scripts/componentes/Ranking.js"></script>
+    <script src="scripts/rutas.js"></script>
+</body>
+</html>
